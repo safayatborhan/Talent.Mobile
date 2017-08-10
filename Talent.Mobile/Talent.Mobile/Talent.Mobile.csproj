@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{349311CA-F5B3-48A6-96A2-43DC59A15FD1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Talent.Mobile</RootNamespace>
+    <AssemblyName>Talent.Mobile</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="Behaviors\ButtonBehaviour.cs" />
+    <Compile Include="Behaviors\CompareValidationBehavior.cs" />
+    <Compile Include="Behaviors\DateValidationBehavior.cs" />
+    <Compile Include="Behaviors\DecimalNumberValidationBehaviour.cs" />
+    <Compile Include="Behaviors\EmailValidatorBehavior.cs" />
+    <Compile Include="Behaviors\MaxLengthValidatorBehavior.cs" />
+    <Compile Include="Behaviors\NumberValidationBehavior.cs" />
+    <Compile Include="Behaviors\PasswordValidationBehavior.cs" />
+    <Compile Include="Common\Constant.cs" />
+    <Compile Include="Common\ExtendedToolbarItem.cs" />
+    <Compile Include="Common\LayoutHelper.cs" />
+    <Compile Include="Common\Messages.cs" />
+    <Compile Include="Context\ACTContext.cs" />
+    <Compile Include="Controls\Cell\EducationCell.cs" />
+    <Compile Include="Controls\Cell\InterviewMatrixCell.cs" />
+    <Compile Include="Controls\Cell\InterviewQuestionsCell.cs" />
+    <Compile Include="Controls\Cell\LineItemDetailCell.cs" />
+    <Compile Include="Controls\Cell\OnsiteDetailCell.cs" />
+    <Compile Include="Controls\Cell\TextItemCell.cs" />
+    <Compile Include="Controls\Cell\WorkExperienceCell.cs" />
+    <Compile Include="Controls\LoadingIndicator.cs" />
+    <Compile Include="Controls\Seperator.cs" />
+    <Compile Include="CustomRenderer\BindableRadioGroup.cs" />
+    <Compile Include="CustomRenderer\CustomEntry.cs" />
+    <Compile Include="CustomRenderer\CustomEntryForGeneralPurpose.cs" />
+    <Compile Include="CustomRenderer\CustomEntryForLogin.cs" />
+    <Compile Include="CustomRenderer\CustomRadioButton.cs" />
+    <Compile Include="CustomRenderer\CustomSwitch.cs" />
+    <Compile Include="CustomRenderer\ExtendedEntry.cs" />
+    <Compile Include="CustomRenderer\ExtendedLabel.cs" />
+    <Compile Include="Helpers\BindableObjectExtensions.cs" />
+    <Compile Include="Helpers\EventArgs{T}.cs" />
+    <Compile Include="Helpers\EventExtensions.cs" />
+    <Compile Include="Interface\INetworkOperation.cs" />
+    <Compile Include="Interface\IPicture.cs" />
+    <Compile Include="Models\Batch.cs" />
+    <Compile Include="Models\Candidate.cs" />
+    <Compile Include="Models\City.cs" />
+    <Compile Include="Models\College.cs" />
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Degree.cs" />
+    <Compile Include="Models\DocumentModel.cs" />
+    <Compile Include="Models\Education.cs" />
+    <Compile Include="Models\Interview.cs" />
+    <Compile Include="Models\InterviewQuestions.cs" />
+    <Compile Include="Models\InterviewsModel.cs" />
+    <Compile Include="Models\LineItem.cs" />
+    <Compile Include="Models\MenuModel.cs" />
+    <Compile Include="Models\Onsite.cs" />
+    <Compile Include="Models\Qualification.cs" />
+    <Compile Include="Models\QuestionSet.cs" />
+    <Compile Include="Models\Specialization.cs" />
+    <Compile Include="Models\State.cs" />
+    <Compile Include="Models\StatusModel.cs" />
+    <Compile Include="Models\Streams.cs" />
+    <Compile Include="Models\SubjectTakensModel.cs" />
+    <Compile Include="Models\University.cs" />
+    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Models\WorkExperience.cs" />
+    <Compile Include="MyClass.cs" />
+    <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Pages\EducationDetails.cs" />
+    <Compile Include="Pages\InterviewDetails.cs" />
+    <Compile Include="Controls\Cell\LineItemCell.cs" />
+    <Compile Include="Pages\InterviewMatrix.cs" />
+    <Compile Include="Pages\Master\MasterPage.cs" />
+    <Compile Include="Pages\Master\MasterPageForStatus.cs" />
+    <Compile Include="Pages\Master\MenuList.cs" />
+    <Compile Include="Pages\Status.cs" />
+    <Compile Include="Pages\TestExam.cs" />
+    <Compile Include="Pages\User\Login.cs" />
+    <Compile Include="Pages\User\Register.cs" />
+    <Compile Include="Pages\UploadDocuments.cs" />
+    <Compile Include="Pages\ViewIVQuestions.cs" />
+    <Compile Include="Pages\WorkExperience.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="ViewModels\RadioGroupDemoViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Dropbox.Api, Version=4.0.0.0, Culture=neutral, PublicKeyToken=310f0e82fbb45d01, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Dropbox.Api.4.2.4\lib\portable-net40+sl5+wp80+win8+wpa81\Dropbox.Api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EonianXamarinLabs">
+      <HintPath>..\..\ExternalReference\EonianXamarinLabs.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageCircle.Forms.Plugin.Abstractions">
+      <HintPath>..\..\packages\Xam.Plugins.Forms.ImageCircle.1.8.1\lib\portable-net45+wp80+win8+wpa81\ImageCircle.Forms.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wp8+wpa81\Microsoft.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wp8+wpa81\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Media, Version=2.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugin.Media.2.6.2\lib\portable-net45+wp80+win8+wpa81\Plugin.Media.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Media.Abstractions, Version=2.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugin.Media.2.6.2\lib\portable-net45+wp80+win8+wpa81\Plugin.Media.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\..\packages\Xamarin.Forms.2.3.4.231\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\..\packages\Xamarin.Forms.2.3.4.231\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\..\packages\Xamarin.Forms.2.3.4.231\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\..\packages\Xamarin.Forms.2.3.4.224\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.224\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+</Project>
